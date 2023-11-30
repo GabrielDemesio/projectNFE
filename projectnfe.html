@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Emissão de Nota Fiscal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptnfe.js" defer></script>
+
+</head>
+
+<body>
+    <form class="nfForm">
+        <h2>Emissão de Nota Fiscal de Serviço</h2>
+
+        <div class="form_group">
+            <label for="clientName">Nome do Cliente</label>
+            <input type="text" id="clientName" class="form_input" required>
+        </div>
+        <div class="form_group">
+            <label for="clientCPForCNPJ">CPF/CNPJ</label>
+            <input type="text" id="clientCPForCNPJ" class="form_input" maxlength="11" placeholder="000.000.000-00"
+                required>
+        </div>
+        <div class="form_group">
+            <label for="address">Endereço</label>
+            <input type="text" id="address" class="form_input" required>
+        </div>
+        <div class="form_group">
+            <label for="date">Data</label>
+            <input type="date" id="date" class="form_input" required>
+        </div>
+        <div class="form_group">
+            <label for="serviceName">Descrição do Serviço</label>
+            <input type="text" id="serviceName" class="form_input" required>
+        </div>
+        <div class="form_group">
+            <label for="serviceValue">Valor do Serviço</label>
+            <input type="number" id="serviceValue" class="form_input" min="0" step="0.01" required>
+        </div>
+        <button type="button" onclick="emitirNotaFiscal()">Emitir Nota Fiscal</button>
+    </form>
+
+    <div class="nfContainer">
+        <h3>Nota Fiscal de Serviço</h3>
+        <table>
+            <tr>
+                <th>Cliente</th>
+                <th>CPF/CNPJ</th>
+                <th>Endereço</th>
+                <th>Data</th>
+                <th>Serviço</th>
+                <th>Valor</th>
+                <th>ICMS</th>
+                <th>PIS</th>
+                <th>Total</th>
+            </tr>
+            <tbody id="nfDetails">
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+    <footer class="footer">
+        <p>&copy; Gabriel Demesio</p>
+        <a href="https://gabrieldemesio.github.io/PortfolioGabriel/"><p>Meu Portfolio</p></a>
+    </footer>
+    </div>
+</body>
+
+
+
+</html>

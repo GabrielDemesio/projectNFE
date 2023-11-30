@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.nfForm{
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background:#ffffff; 
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+    border-radius:3px; 
+    padding:1em;
+}
+.form_group{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+.form_input {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px #f2f2f2 solid;
+    background: #fdfdfd;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.nfContainer {
+    width: auto;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
